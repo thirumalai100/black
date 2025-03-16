@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="add-task.css">
+</head>
+<body>
+    <div class="task-container">
+        <h2>Add New Task</h2>
+        <form id="taskForm">
+            <input type="text" id="taskName" placeholder="Task Name" required>
+            <select id="priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <select id="team">
+                <option value="Team A">Team A</option>
+                <option value="Team B">Team B</option>
+                <option value="Team C">Team C</option>
+                <option value="Team D">Team D</option>
+                <option value="Team E">Team E</option>
+            </select>
+            <input type="date" id="dueDate" required>
+            <select id="status">
+                <option value="todo">To-Do</option>
+                <option value="inprogress">In Progress</option>
+                <option value="pending">Pending</option>
+                <option value="finished">Finished</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>

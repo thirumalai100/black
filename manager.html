@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Panel</title>
+    <link rel="stylesheet" href="manager.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Manager Panel</div>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="add-task.html">Assign Task</a></li>
+                <li><a href="meeting.html">Meetings</a></li>
+            </ul>
+        </aside>
+
+        <main class="dashboard">
+            <h1>Manager Instructions</h1>
+            <textarea id="instructions" placeholder="Enter instructions for teams..."></textarea>
+            <button onclick="sendInstructions()">Send</button>
+
+            <h2>Schedule a Meeting</h2>
+            <input type="datetime-local" id="meetingTime">
+            <button onclick="scheduleMeeting()">Schedule</button>
+        </main>
+    </div>
+
+    <script>
+        function sendInstructions() {
+            alert("Instructions sent to all teams!");
+        }
+
+        function scheduleMeeting() {
+            alert("Meeting scheduled successfully!");
+        }
+    </script>
+</body>
+</html>

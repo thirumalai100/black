@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Tasks</title>
+    <link rel="stylesheet" href="finished.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Workstream</div>
+        <div class="auth-buttons">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Task Status</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="finished.html">Finished Tasks</a></li>
+                <li><a href="pending.html">Pending Tasks</a></li>
+                <li><a href="todo.html">To-Do Tasks</a></li>
+                <li><a href="inprogress.html">In Progress</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+            </ul>
+        </aside>
+
+        <main class="dashboard">
+            <h1>Finished Tasks</h1>
+            <div id="taskList"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadTasks("finished");
+        });
+    </script>
+</body>
+</html>
